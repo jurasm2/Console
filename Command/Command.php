@@ -21,6 +21,7 @@ use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Helper\HelperSet;
+use Nette;
 
 /**
  * Base class for all commands.
@@ -29,7 +30,7 @@ use Symfony\Component\Console\Helper\HelperSet;
  *
  * @api
  */
-class Command
+class Command extends Nette\Object
 {
     private $application;
     private $name;
